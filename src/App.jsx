@@ -1,31 +1,37 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Projects from './components/Projects';
-import Work from './components/Work';
-import Library from './components/Library';
-import Hobbies from './components/Hobbies';
 import Footer from './components/Footer';
-import './components/components.css';
+import Home from './pages/Home';
+import Work from './pages/Work';
+import Library from './pages/Library';
+import './index.css';
+
+// To scroll to top on route change
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
 
 function App() {
   return (
-    <div className="app">
-      <div className="bg-gradient-mesh">
-        <div className="blob blob-1"></div>
-        <div className="blob blob-2"></div>
+    <Router basename="/tannmayPersonalWebsite">
+      <ScrollToTop />
+      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        <Navbar />
+        <main style={{ flex: 1, paddingTop: '80px' }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/library" element={<Library />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
-      
-      <Navbar />
-      <main>
-        <Hero />
-        <Projects />
-        <Work />
-        <Library />
-        <Hobbies />
-      </main>
-      <Footer />
-    </div>
+    </Router>
   );
 }
 
