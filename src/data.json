@@ -1,0 +1,806 @@
+{
+  "profile": {
+    "name": "Tannmay Kumarr Baid",
+    "bio": "I'm a 12th-grade commerce student at National Public School, HSR, and an Adjunct Junior Scholar at the Takshashila Institution. I am highly curious and have spent years exploring fields ranging from astrophysics and neuroscience to policy, law, economics, finance, and tech.",
+    "education": "National Public School, HSR (High School Diploma) | The Takshashila Institution (GCPP TP Cohort 43 Grad, Outstanding Performance)",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/tannmaykumarrbaid/",
+      "email": "tannmay1303@gmail.com",
+      "twitter": "https://x.com/tannmaybaid"
+    },
+    "hobbies": [
+      "Astronomy (8-inch Dobsonian telescope)",
+      "Reading",
+      "Math",
+      "Gym",
+      "Debate (ISDS Top-40 in 2023, Top-18 in 2025 | LSE Open Senior Novice Gold Medal)"
+    ]
+  },
+  "projects": [
+    {
+      "title": "India Critical Minerals Dashboard",
+      "url": "https://indiacriticalminerals.com/",
+      "date": ""
+    },
+    {
+      "title": "ChainWorld \u2014 learn blockchain, visually",
+      "url": "https://tannmay-python.github.io/blockchain-seminar/",
+      "date": ""
+    },
+    {
+      "title": "India's Tech Laws \u00b7 1885\u20132025",
+      "url": "https://tannmay-python.github.io/techLawsList/",
+      "date": ""
+    }
+  ],
+  "work": {
+    "Op-Eds": [
+      {
+        "title": "China\u2019s rare-earth controls are not the masterstroke they seem",
+        "url": "https://timesofindia.indiatimes.com/blogs/toi-edit-page/chinas-rare-earth-controls-are-not-the-masterstroke-they-seem/",
+        "date": "2025-04-27"
+      },
+      {
+        "title": "China's Cable Cutter Raises Concerns",
+        "url": "https://stratnewsglobal.tech/world/chinas-cable-cutter-raises-concerns-but-indias-focus-should-be-on-repairs/",
+        "date": "2025-04-29"
+      },
+      {
+        "title": "The Way to Break China\u2019s Stranglehold on Rare Earths | India's World",
+        "url": "https://indiasworld.in/the-way-to-break-chinas-stranglehold-on-rare-earths-2/",
+        "date": "2025-06-23"
+      },
+      {
+        "title": "Brownfield mining operations are enough to meet India\u2019s rare-earth needs",
+        "url": "https://www.moneycontrol.com/news/opinion/brownfield-mining-operations-are-enough-to-meet-india-s-rare-earth-needs-13338164.html",
+        "date": "2025-07-28"
+      },
+      {
+        "title": "Trump\u2019s AI Strategy: Beyond the race for global supremacy",
+        "url": "https://www.moneycontrol.com/news/opinion/trump-s-ai-strategy-beyond-the-race-for-global-supremacy-13443628.html",
+        "date": "2025-08-12"
+      },
+      {
+        "title": "Tracks without trains",
+        "url": "https://www.thehindu.com/opinion/op-ed/tracks-without-trains/article70134580.ece",
+        "date": "2025-10-08"
+      },
+      {
+        "title": "Beijing\u2019s rare earth playbook is tired. It\u2019s time India wrote its own",
+        "url": "https://timesofindia.indiatimes.com/blogs/toi-edit-page/beijings-rare-earth-playbook-is-tired-its-time-india-wrote-its-own/",
+        "date": "2025-10-19"
+      },
+      {
+        "title": "https://theprint.in/opinion/pakistan-bluffing-6-trillion-mineral-wealth/2780538/",
+        "url": "https://theprint.in/opinion/pakistan-bluffing-6-trillion-mineral-wealth/2780538/",
+        "date": ""
+      },
+      {
+        "title": "Rare earths in India:\u2009Bridging the gaps to ensure sufficiency",
+        "url": "https://www.hindustantimes.com/opinion/rare-earths-in-india-bridging-the-gaps-to-ensure-sufficiency-101764605571306.html",
+        "date": "2025-12-01"
+      },
+      {
+        "title": "Inside the Tent: India and the Limits of Pax Silica | India's World",
+        "url": "https://indiasworld.in/inside-the-tent-india-and-the-limits-of-pax-silica/",
+        "date": "2026-01-16"
+      },
+      {
+        "title": "Rare earths sector can do with recycling thrust",
+        "url": "https://www.hindustantimes.com/opinion/rare-earths-sector-can-do-with-recycling-thrust-101769970010181.html",
+        "date": "2026-02-02"
+      },
+      {
+        "title": "What the Budget reveals about India\u2019s critical minerals goals",
+        "url": "https://www.moneycontrol.com/news/opinion/what-the-budget-reveals-about-india-s-critical-minerals-goals-13825383.html",
+        "date": "2026-02-12"
+      }
+    ],
+    "Publications": [
+      {
+        "title": "India Should Double Down on Rare Earth Recycling",
+        "url": "https://takshashila.org.in/content/publications/20260123-India-Should-Double-Down-On-Rare-Earth-Recycling.html",
+        "date": ""
+      },
+      {
+        "title": "Geopolitics of Bengaluru\u2019s Yellow Metro Line",
+        "url": "https://takshashila.org.in/content/publications/20250909-Geopolitics-of-Bengalurus-Yellow-Metro-Line.html",
+        "date": ""
+      }
+    ],
+    "Podcasts": [
+      {
+        "title": "All Things Policy | Inside the Lok Sabha: Who Really Cares About Foreign Policy?",
+        "url": "https://www.youtube.com/watch?v=Z5QmPqWUN6A",
+        "date": "2025-04-14"
+      },
+      {
+        "title": "All Things Policy | Signals from the Signal Chat Leak",
+        "url": "https://www.youtube.com/watch?v=el2Nj_w4Ydg",
+        "date": "2025-04-14"
+      },
+      {
+        "title": "All Things Policy | Trump&#39;s Tariff Pause and Implications for India",
+        "url": "https://www.youtube.com/watch?v=11h9Zv5BxUk",
+        "date": "2025-04-30"
+      },
+      {
+        "title": "All Things Policy | Tackling Oil Spills in India&#39;s Coastal Waters",
+        "url": "https://www.youtube.com/watch?v=1KI6Uml4ruQ",
+        "date": "2025-08-25"
+      },
+      {
+        "title": "All Things Policy | Bengaluru&#39;s Yellow Metro Line Through Geopolitical Tracks",
+        "url": "https://www.youtube.com/watch?v=Ft8X9XJ3CC8",
+        "date": "2025-09-22"
+      },
+      {
+        "title": "All Things Policy | Unpacking the New US National Security Strategy",
+        "url": "https://www.youtube.com/watch?v=8SDOAItcIaQ",
+        "date": "2026-01-01"
+      },
+      {
+        "title": "All Things Policy | Are All Minerals Critical In The Same Way?",
+        "url": "https://www.youtube.com/watch?v=SS2ZqnLrcN4&t=1283s",
+        "date": "2026-06-25"
+      },
+      {
+        "title": "All Things Policy | India Should Double Down On Rare Earth Recycling",
+        "url": "https://www.youtube.com/watch?v=klHjKDA0hKQ",
+        "date": "2026-02-17"
+      },
+      {
+        "title": "All Things Policy | Critical Minerals Partnerships",
+        "url": "https://www.youtube.com/watch?v=MWQqoXJHRug",
+        "date": "2026-06-23"
+      }
+    ],
+    "Blogs": [
+      {
+        "title": "Today\u2019s captcha is a reputation score for your browser",
+        "url": "https://takshashila.org.in/content/blogs/20251216-Todays-Captcha-Is-A-Reputation-Score-For-Your-Browser.html",
+        "date": ""
+      },
+      {
+        "title": "Switching Tracks: Time for Privatisation in the Indian Railways - The Takshashila Institution",
+        "url": "https://legion.takshashila.org.in/blogs/switching-tracks-time-for-privatisation-in-the-indian-railways",
+        "date": "2025-06-24"
+      }
+    ],
+    "Newsletters": [
+      {
+        "title": "https://hightechir.substack.com/i/169108854/technopolitik-the-achilles-heel-of-americas-magnet-plan",
+        "url": "https://hightechir.substack.com/i/169108854/technopolitik-the-achilles-heel-of-americas-magnet-plan",
+        "date": "2025-07-24"
+      },
+      {
+        "title": "https://hightechir.substack.com/p/160-tech-denial-as-a-catalyst-for",
+        "url": "https://hightechir.substack.com/p/160-tech-denial-as-a-catalyst-for",
+        "date": "2026-05-24"
+      },
+      {
+        "title": "https://hightechir.substack.com/p/153-unpacking-press-note-3-amendments",
+        "url": "https://hightechir.substack.com/p/153-unpacking-press-note-3-amendments",
+        "date": "2026-03-15"
+      }
+    ]
+  },
+  "library": [
+    {
+      "title": "Mein Kampf",
+      "author": "Adolf Hitler"
+    },
+    {
+      "title": "Play Bigger",
+      "author": "Al Ramadon"
+    },
+    {
+      "title": "The One Thing",
+      "author": "Gary Keller"
+    },
+    {
+      "title": "Thus Spake Zarathustra",
+      "author": "Friedrich Nietzsche"
+    },
+    {
+      "title": "The Antichrist",
+      "author": "Friedrich Nietzsche"
+    },
+    {
+      "title": "Indian Coinage",
+      "author": "Sainath Redappa"
+    },
+    {
+      "title": "The Art of War",
+      "author": "Sun Tzu"
+    },
+    {
+      "title": "God is Dead",
+      "author": "Friedrich Nietzsche"
+    },
+    {
+      "title": "Aurangzeb ",
+      "author": "Audrey Truschke"
+    },
+    {
+      "title": "Drive",
+      "author": "Daniel H. Pink"
+    },
+    {
+      "title": "The Communist Manifesto",
+      "author": "Karl Marx"
+    },
+    {
+      "title": "Nationalism",
+      "author": "Rabindranath Tagore"
+    },
+    {
+      "title": "Psychopathology of Everyday life",
+      "author": "Sigmund Freud"
+    },
+    {
+      "title": "On the Genealogy of Morals",
+      "author": "Friedrich Nietzsche"
+    },
+    {
+      "title": "Ecce Home",
+      "author": "Friedrich Nietzsche"
+    },
+    {
+      "title": "Beyond Good and Evil",
+      "author": "Friedrich Nietzsche"
+    },
+    {
+      "title": "The Twilight Of the Idols",
+      "author": "Friedrich Nietzsche"
+    },
+    {
+      "title": "Human, All too Human",
+      "author": "Friedrich Nietzsche"
+    },
+    {
+      "title": "Macbeth",
+      "author": "William Shakespeare"
+    },
+    {
+      "title": "The Merchant of Venice",
+      "author": "William Shakespeare"
+    },
+    {
+      "title": "A Midsummer Night's Dream",
+      "author": "William Shakespeare"
+    },
+    {
+      "title": "Romeo and Juliet",
+      "author": "William Shakespeare"
+    },
+    {
+      "title": "Othello",
+      "author": "William Shakespeare"
+    },
+    {
+      "title": "Hamlet",
+      "author": "William Shakespeare"
+    },
+    {
+      "title": "The Concise Textbook of Vedic Hinduism",
+      "author": "Dr. Vedavyas"
+    },
+    {
+      "title": "Annihilation of Caste",
+      "author": "Dr. B.R. Ambedkar"
+    },
+    {
+      "title": "Why I Am An Atheist",
+      "author": "Bhagat Singh"
+    },
+    {
+      "title": "Anandmath",
+      "author": "Bankim Chandra Chatterjee"
+    },
+    {
+      "title": "Statistics Without Tears",
+      "author": "Derek Rowntree"
+    },
+    {
+      "title": "Arthashastra",
+      "author": "Kautilya"
+    },
+    {
+      "title": "Ego is the Enemy",
+      "author": "Ryan Holiday"
+    },
+    {
+      "title": "Life and Work Principles",
+      "author": "Ray Dalio"
+    },
+    {
+      "title": "Glimpses Of World History",
+      "author": "Jawaharlal Nehru"
+    },
+    {
+      "title": "The Magic Of Thinking Big",
+      "author": "David Schwartz"
+    },
+    {
+      "title": "Anna Karenina",
+      "author": "Leo Tolstoy"
+    },
+    {
+      "title": "Without Fear",
+      "author": "Kuldip Nayar"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell"
+    },
+    {
+      "title": "The Art of Thinking Clearly",
+      "author": "Rolf Dobelli"
+    },
+    {
+      "title": "The Forgotten History Of India",
+      "author": "Arun Anand"
+    },
+    {
+      "title": "Why I Am A Hindu",
+      "author": "Shashi Tharoor"
+    },
+    {
+      "title": "Bad Blood",
+      "author": "John Carreyrou"
+    },
+    {
+      "title": "Ten Judgements That Changed India",
+      "author": "Zia Mody"
+    },
+    {
+      "title": "Metamorphosis",
+      "author": "Franz Kafka"
+    },
+    {
+      "title": "Animal Farm",
+      "author": "George Orwell"
+    },
+    {
+      "title": "The Ancient Science of Mantras",
+      "author": "Om Swami"
+    },
+    {
+      "title": "Critique Of Pure Reason",
+      "author": "Immanuel Kant"
+    },
+    {
+      "title": "Poor Economics",
+      "author": "Abhijit V. Banerjee"
+    },
+    {
+      "title": "Politics",
+      "author": "Aristotle"
+    },
+    {
+      "title": "The Interpretation Of Dreams",
+      "author": "Sigmund Freud"
+    },
+    {
+      "title": "The Anarchy",
+      "author": "William Dalrymple"
+    },
+    {
+      "title": "The Story Of My Experiments With Truth",
+      "author": "Mahatma Gandhi"
+    },
+    {
+      "title": "The Wealth Of Nations",
+      "author": "Adam Smith"
+    },
+    {
+      "title": "Homo Deus",
+      "author": "Yuval Noah Harari"
+    },
+    {
+      "title": "The Dragon Needs Wings",
+      "author": "Aryan Dixit"
+    },
+    {
+      "title": "The India Way",
+      "author": "S. Jaishankar"
+    },
+    {
+      "title": "Why Bharat Matters",
+      "author": "S. Jaishankar"
+    },
+    {
+      "title": "Wings For Youngsters",
+      "author": "Mahendra Baid"
+    },
+    {
+      "title": "India that is Bharat",
+      "author": "J. Sai Deepak"
+    },
+    {
+      "title": "Digital Minimalism",
+      "author": "Cal Newport"
+    },
+    {
+      "title": "The Rational Optimist",
+      "author": "Matt Ridley"
+    },
+    {
+      "title": "The Prince",
+      "author": "Niccolo Machiavelli"
+    },
+    {
+      "title": "The Origin Of Species",
+      "author": "Charles Darwin"
+    },
+    {
+      "title": "The RSS",
+      "author": "A.G. Noorani"
+    },
+    {
+      "title": "The Discovery Of India",
+      "author": "Jawaharlal Nehru"
+    },
+    {
+      "title": "Das Capital",
+      "author": "Karl Marx"
+    },
+    {
+      "title": "The Constitution Of India",
+      "author": "556.0"
+    },
+    {
+      "title": "International Law",
+      "author": "Malcolm N. Shaw"
+    },
+    {
+      "title": "The 10x Rule",
+      "author": "Grant Cardone"
+    },
+    {
+      "title": "The Book Of Why ",
+      "author": "Judea Pearl"
+    },
+    {
+      "title": "The Economics Book",
+      "author": "352.0"
+    },
+    {
+      "title": "The Philosophy Book",
+      "author": "352.0"
+    },
+    {
+      "title": "The Future is Faster Than you Think",
+      "author": "Peter H. Diamandis"
+    },
+    {
+      "title": "India, Bharat and Pakistan",
+      "author": "J. Sai Deepak"
+    },
+    {
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky"
+    },
+    {
+      "title": "The Indian Struggle",
+      "author": "Subhas Chandra Bose"
+    },
+    {
+      "title": "Hindus In Hindu Rashtra",
+      "author": "Anand Ranganathan"
+    },
+    {
+      "title": "Read People Like A Book",
+      "author": "Patrick King"
+    },
+    {
+      "title": "Alexander Alekhine - Master Of Attack",
+      "author": "Alexander Raetsky"
+    },
+    {
+      "title": "Hindutva ",
+      "author": "Vinayak Damodar Savarkar"
+    },
+    {
+      "title": "The Unconscious",
+      "author": "Sigmund Freud"
+    },
+    {
+      "title": "Deep Work",
+      "author": "Cal Newport "
+    },
+    {
+      "title": "The Denial of Death",
+      "author": "Ernest Becker"
+    },
+    {
+      "title": "Utilitarianism",
+      "author": "John Stuart Mill"
+    },
+    {
+      "title": "Getting Things Done",
+      "author": "David Allen"
+    },
+    {
+      "title": "Eat That Frog",
+      "author": "Brian Tracy"
+    },
+    {
+      "title": "War and Peace ",
+      "author": "Leo Tolstoy"
+    },
+    {
+      "title": "Why I Killed Gandhi",
+      "author": "Nathuram Godse"
+    },
+    {
+      "title": "Julius Caesar",
+      "author": "William Shakespeare"
+    },
+    {
+      "title": "The 48 Laws of Power",
+      "author": "Robert Greene"
+    },
+    {
+      "title": "Mastery",
+      "author": "Robert Greene"
+    },
+    {
+      "title": "Gita Makaranda",
+      "author": "802.0"
+    },
+    {
+      "title": "Intermediate Microeconomics",
+      "author": "Hal Varian"
+    },
+    {
+      "title": "Factfulness",
+      "author": "Hans Rosling"
+    },
+    {
+      "title": "Woke, Inc",
+      "author": "Vivek Ramaswamy"
+    },
+    {
+      "title": "Principles Of Statutory Interpretation",
+      "author": "Justice G.P. Singh"
+    },
+    {
+      "title": "Financial Statement Analysis ",
+      "author": "Subramanyam"
+    },
+    {
+      "title": "Investments ",
+      "author": "Bodie, Kane, Marcus, Mohanty"
+    },
+    {
+      "title": "The Economics of Money, Banking, and Financial Markets ",
+      "author": "Frederic S. Mishkin"
+    },
+    {
+      "title": "Principles of Corporate Finance (14th Edition)",
+      "author": "Brealey, Myers, Allen, Edmans, Mohanty"
+    },
+    {
+      "title": "The General Theory of Employment, Interest and Money",
+      "author": "John Maynard Keynes"
+    },
+    {
+      "title": "All of Statistics",
+      "author": "Larry Wesserman"
+    },
+    {
+      "title": "Indian Constitutional Law ",
+      "author": "M.P Jain"
+    },
+    {
+      "title": "Mans Search for Meaning",
+      "author": "Victor Frankl"
+    },
+    {
+      "title": "Nehru The Invention of India",
+      "author": "Shashi Tharoor"
+    },
+    {
+      "title": "Boost Your Chess 1 - The Fundamentals",
+      "author": "Artur Yusopov"
+    },
+    {
+      "title": "Build Up Your Chess 1 - The Fundamentals",
+      "author": "Artur Yusopov"
+    },
+    {
+      "title": "The Law of Torts",
+      "author": "Ratanlal and Dhirajlal"
+    },
+    {
+      "title": "Contract and Specific Relief",
+      "author": "Avatar Singh"
+    },
+    {
+      "title": "Naked Economics",
+      "author": "Charles Wheelan"
+    },
+    {
+      "title": " Mahabharata: The Kuru Princes (Book 1)",
+      "author": "Amar Chitra Katha"
+    },
+    {
+      "title": "Mahabharata: Pandavas In Exile (Book 2)",
+      "author": "Amar Chitra Katha"
+    },
+    {
+      "title": "Mahabharata: On the Battlefield of Kurukshetra (Book 3)",
+      "author": "Amar Chitra Katha"
+    },
+    {
+      "title": "Ramayana: Bala Kand (Book 1)",
+      "author": "Amar Chitra Katha"
+    },
+    {
+      "title": "Ramayana: Ayodhya Kand (Book 2)",
+      "author": "Amar Chitra Katha"
+    },
+    {
+      "title": "Ramayana: Aranya Kand (Book 3)",
+      "author": "Amar Chitra Katha"
+    },
+    {
+      "title": "Ramayana: Kishkindha Kand (Book 4)",
+      "author": "Amar Chitra Katha"
+    },
+    {
+      "title": "Ramayana: Sundara Kand (Book 5)",
+      "author": "Amar Chitra Katha"
+    },
+    {
+      "title": "Ramayana: Yuddha Kand (Book 6)",
+      "author": "Amar Chitra Katha"
+    },
+    {
+      "title": "Immune",
+      "author": "Philipp Dettmer"
+    },
+    {
+      "title": "AP US History",
+      "author": "The Princeton Review"
+    },
+    {
+      "title": "PSAT/NMSQT",
+      "author": "The Princeton Review"
+    },
+    {
+      "title": "AP English Language & Composition",
+      "author": "The Princeton Review"
+    },
+    {
+      "title": "Digital SAT",
+      "author": "The Princeton Review"
+    },
+    {
+      "title": "AP US Government & Politics",
+      "author": "The Princeton Review"
+    },
+    {
+      "title": "AP Computer Science A",
+      "author": "The Princeton Review"
+    },
+    {
+      "title": "AP Physics C",
+      "author": "The Princeton Review"
+    },
+    {
+      "title": "AP Calculus BC",
+      "author": "The Princeton Review"
+    },
+    {
+      "title": "AP Statistics",
+      "author": "The Princeton Review"
+    },
+    {
+      "title": "AP Psychology",
+      "author": "The Princeton Review"
+    },
+    {
+      "title": "AP World History ",
+      "author": "The Princeton Review"
+    },
+    {
+      "title": "AP European History",
+      "author": "The Princeton Review"
+    },
+    {
+      "title": "AP Microeconomics and Macroeconomics",
+      "author": "The Princeton Review"
+    },
+    {
+      "title": "AP Comparative Government",
+      "author": "Accepted Inc"
+    },
+    {
+      "title": "Surrounded By Idiots",
+      "author": "Thomas Erikson"
+    },
+    {
+      "title": "Dopamine Detox",
+      "author": "Thibaut Meurisse"
+    },
+    {
+      "title": "The Ultimate LNAT Guide",
+      "author": "William Antony & Dr Rohan Agarwal"
+    },
+    {
+      "title": "The Ultimate TSA Guide",
+      "author": "Dr Rohan Agarwal & Johnathan Madigan"
+    },
+    {
+      "title": "Nicomachean Ethics",
+      "author": "Aristotle"
+    },
+    {
+      "title": "The Social Contract ",
+      "author": "Jean-Jacques Rousseau"
+    },
+    {
+      "title": "Discourse on the Origin of Inequality Amongst Men",
+      "author": "Jean-Jacques Rousseau"
+    },
+    {
+      "title": "Linear Algebra Done Right",
+      "author": "Sheldon Axler"
+    },
+    {
+      "title": "Macroeconomics",
+      "author": "Olivier Blanchard"
+    },
+    {
+      "title": "Introductory Econometrics",
+      "author": "Jeffrey M. Woolridge"
+    },
+    {
+      "title": "Capital in the Twenty-First Century",
+      "author": "Thomas Piketty"
+    },
+    {
+      "title": "Tao Te Ching",
+      "author": "Lao Tzu"
+    },
+    {
+      "title": "Meditations",
+      "author": "Marcus Aurelius"
+    },
+    {
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman"
+    },
+    {
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari"
+    },
+    {
+      "title": "The Palace of Illusions",
+      "author": "Chitra Banerjee Divakaruni"
+    },
+    {
+      "title": "The Now Habit",
+      "author": "Neil Fiore"
+    },
+    {
+      "title": "Four Thousand Weeks",
+      "author": "Oliver Burkeman"
+    },
+    {
+      "title": "Calculus Early Transcendentals",
+      "author": "James Stewart, Daniel Clegg, Saleem Watson"
+    },
+    {
+      "title": "CFA 2026 Box Set (Level 1, Vol 1-10)",
+      "author": "CFA Foundations"
+    },
+    {
+      "title": "How to Prove it",
+      "author": "Velleman"
+    }
+  ]
+}

@@ -1,0 +1,1098 @@
+[
+  [
+    "Sl. No",
+    "Book Title",
+    "Author",
+    "Pages",
+    "Lent to",
+    "Genre"
+  ],
+  [
+    "1.0",
+    "Mein Kampf",
+    "Adolf Hitler",
+    "591.0",
+    "-"
+  ],
+  [
+    "2.0",
+    "Play Bigger",
+    "Al Ramadon",
+    "255.0",
+    "-"
+  ],
+  [
+    "3.0",
+    "The One Thing",
+    "Gary Keller",
+    "239.0",
+    "-"
+  ],
+  [
+    "4.0",
+    "Thus Spake Zarathustra",
+    "Friedrich Nietzsche",
+    "400.0",
+    "-"
+  ],
+  [
+    "5.0",
+    "The Antichrist",
+    "Friedrich Nietzsche",
+    "119.0",
+    "-"
+  ],
+  [
+    "6.0",
+    "Indian Coinage",
+    "Sainath Redappa",
+    "326.0",
+    "-"
+  ],
+  [
+    "7.0",
+    "The Art of War",
+    "Sun Tzu",
+    "103.0",
+    "-"
+  ],
+  [
+    "8.0",
+    "God is Dead",
+    "Friedrich Nietzsche",
+    "121.0",
+    "-"
+  ],
+  [
+    "9.0",
+    "Aurangzeb ",
+    "Audrey Truschke",
+    "189.0",
+    "-"
+  ],
+  [
+    "10.0",
+    "Drive",
+    "Daniel H. Pink",
+    "242.0",
+    "-"
+  ],
+  [
+    "11.0",
+    "The Communist Manifesto",
+    "Karl Marx",
+    "96.0",
+    "-",
+    "\\"
+  ],
+  [
+    "12.0",
+    "Nationalism",
+    "Rabindranath Tagore",
+    "119.0",
+    "-"
+  ],
+  [
+    "13.0",
+    "Psychopathology of Everyday life",
+    "Sigmund Freud",
+    "239.0",
+    "-"
+  ],
+  [
+    "14.0",
+    "On the Genealogy of Morals",
+    "Friedrich Nietzsche",
+    "161.0",
+    "-"
+  ],
+  [
+    "15.0",
+    "Ecce Home",
+    "Friedrich Nietzsche",
+    "172.0",
+    "-"
+  ],
+  [
+    "16.0",
+    "Beyond Good and Evil",
+    "Friedrich Nietzsche",
+    "197.0",
+    "-"
+  ],
+  [
+    "17.0",
+    "The Twilight Of the Idols",
+    "Friedrich Nietzsche",
+    "224.0",
+    "-"
+  ],
+  [
+    "18.0",
+    "Human, All too Human",
+    "Friedrich Nietzsche",
+    "111.0",
+    "-"
+  ],
+  [
+    "19.0",
+    "Macbeth",
+    "William Shakespeare",
+    "120.0",
+    "-"
+  ],
+  [
+    "20.0",
+    "The Merchant of Venice",
+    "William Shakespeare",
+    "110.0",
+    "-"
+  ],
+  [
+    "21.0",
+    "A Midsummer Night's Dream",
+    "William Shakespeare",
+    "95.0",
+    "-"
+  ],
+  [
+    "22.0",
+    "Romeo and Juliet",
+    "William Shakespeare",
+    "143.0",
+    "-"
+  ],
+  [
+    "23.0",
+    "Othello",
+    "William Shakespeare",
+    "152.0",
+    "-"
+  ],
+  [
+    "24.0",
+    "Hamlet",
+    "William Shakespeare",
+    "176.0",
+    "-"
+  ],
+  [
+    "25.0",
+    "The Concise Textbook of Vedic Hinduism",
+    "Dr. Vedavyas",
+    "330.0",
+    "-"
+  ],
+  [
+    "26.0",
+    "Annihilation of Caste",
+    "Dr. B.R. Ambedkar",
+    "200.0",
+    "-"
+  ],
+  [
+    "27.0",
+    "Why I Am An Atheist",
+    "Bhagat Singh",
+    "126.0",
+    "-"
+  ],
+  [
+    "28.0",
+    "Anandmath",
+    "Bankim Chandra Chatterjee",
+    "160.0",
+    "-"
+  ],
+  [
+    "29.0",
+    "Statistics Without Tears",
+    "Derek Rowntree",
+    "199.0",
+    "-"
+  ],
+  [
+    "30.0",
+    "Arthashastra",
+    "Kautilya",
+    "494.0",
+    "-"
+  ],
+  [
+    "31.0",
+    "Ego is the Enemy",
+    "Ryan Holiday",
+    "226.0",
+    "-"
+  ],
+  [
+    "32.0",
+    "Life and Work Principles",
+    "Ray Dalio",
+    "567.0",
+    "-"
+  ],
+  [
+    "33.0",
+    "Glimpses Of World History",
+    "Jawaharlal Nehru",
+    "1155.0",
+    "-"
+  ],
+  [
+    "34.0",
+    "The Magic Of Thinking Big",
+    "David Schwartz",
+    "362.0",
+    "-"
+  ],
+  [
+    "35.0",
+    "Anna Karenina",
+    "Leo Tolstoy",
+    "837.0",
+    "Mukund Jagannath"
+  ],
+  [
+    "36.0",
+    "Without Fear",
+    "Kuldip Nayar",
+    "244.0",
+    "-"
+  ],
+  [
+    "37.0",
+    "1984.0",
+    "George Orwell",
+    "303.0",
+    "-"
+  ],
+  [
+    "38.0",
+    "The Art of Thinking Clearly",
+    "Rolf Dobelli",
+    "326.0",
+    "-"
+  ],
+  [
+    "39.0",
+    "The Forgotten History Of India",
+    "Arun Anand",
+    "198.0",
+    "-"
+  ],
+  [
+    "40.0",
+    "Why I Am A Hindu",
+    "Shashi Tharoor",
+    "302.0",
+    "-"
+  ],
+  [
+    "41.0",
+    "Bad Blood",
+    "John Carreyrou",
+    "339.0",
+    "-"
+  ],
+  [
+    "42.0",
+    "Ten Judgements That Changed India",
+    "Zia Mody",
+    "240.0",
+    "-"
+  ],
+  [
+    "43.0",
+    "Metamorphosis",
+    "Franz Kafka",
+    "100.0",
+    "-"
+  ],
+  [
+    "44.0",
+    "Animal Farm",
+    "George Orwell",
+    "111.0",
+    "-"
+  ],
+  [
+    "45.0",
+    "The Ancient Science of Mantras",
+    "Om Swami",
+    "466.0",
+    "-"
+  ],
+  [
+    "46.0",
+    "Critique Of Pure Reason",
+    "Immanuel Kant",
+    "708.0",
+    "-"
+  ],
+  [
+    "47.0",
+    "Poor Economics",
+    "Abhijit V. Banerjee",
+    "442.0",
+    "-"
+  ],
+  [
+    "48.0",
+    "Politics",
+    "Aristotle",
+    "303.0",
+    "-"
+  ],
+  [
+    "49.0",
+    "The Interpretation Of Dreams",
+    "Sigmund Freud",
+    "543.0",
+    "-"
+  ],
+  [
+    "50.0",
+    "The Anarchy",
+    "William Dalrymple",
+    "522.0",
+    "-"
+  ],
+  [
+    "51.0",
+    "The Story Of My Experiments With Truth",
+    "Mahatma Gandhi",
+    "447.0",
+    "-"
+  ],
+  [
+    "52.0",
+    "The Wealth Of Nations",
+    "Adam Smith",
+    "1143.0",
+    "-"
+  ],
+  [
+    "53.0",
+    "Homo Deus",
+    "Yuval Noah Harari",
+    "513.0",
+    "-"
+  ],
+  [
+    "54.0",
+    "The Dragon Needs Wings",
+    "Aryan Dixit",
+    "213.0",
+    "-"
+  ],
+  [
+    "55.0",
+    "The India Way",
+    "S. Jaishankar",
+    "226.0",
+    "-"
+  ],
+  [
+    "56.0",
+    "Why Bharat Matters",
+    "S. Jaishankar",
+    "226.0",
+    "-"
+  ],
+  [
+    "57.0",
+    "Wings For Youngsters",
+    "Mahendra Baid",
+    "156.0",
+    "-"
+  ],
+  [
+    "58.0",
+    "India that is Bharat",
+    "J. Sai Deepak",
+    "460.0",
+    "-"
+  ],
+  [
+    "59.0",
+    "Digital Minimalism",
+    "Cal Newport",
+    "284.0",
+    "-"
+  ],
+  [
+    "60.0",
+    "The Rational Optimist",
+    "Matt Ridley",
+    "452.0",
+    "-"
+  ],
+  [
+    "61.0",
+    "The Prince",
+    "Niccolo Machiavelli",
+    "184.0",
+    "-"
+  ],
+  [
+    "62.0",
+    "The Origin Of Species",
+    "Charles Darwin",
+    "500.0",
+    "-"
+  ],
+  [
+    "63.0",
+    "The RSS",
+    "A.G. Noorani",
+    "547.0",
+    "-"
+  ],
+  [
+    "64.0",
+    "The Discovery Of India",
+    "Jawaharlal Nehru",
+    "642.0",
+    "-"
+  ],
+  [
+    "65.0",
+    "Das Capital",
+    "Karl Marx",
+    "1392.0",
+    "-"
+  ],
+  [
+    "66.0",
+    "The Constitution Of India",
+    "556.0",
+    "-"
+  ],
+  [
+    "67.0",
+    "International Law",
+    "Malcolm N. Shaw",
+    "1213.0",
+    "-"
+  ],
+  [
+    "68.0",
+    "The 10x Rule",
+    "Grant Cardone",
+    "238.0",
+    "-"
+  ],
+  [
+    "69.0",
+    "The Book Of Why ",
+    "Judea Pearl",
+    "418.0",
+    "-"
+  ],
+  [
+    "70.0",
+    "The Economics Book",
+    "352.0",
+    "-"
+  ],
+  [
+    "71.0",
+    "The Philosophy Book",
+    "352.0",
+    "-"
+  ],
+  [
+    "72.0",
+    "The Future is Faster Than you Think",
+    "Peter H. Diamandis",
+    "365.0",
+    "-"
+  ],
+  [
+    "73.0",
+    "India, Bharat and Pakistan",
+    "J. Sai Deepak",
+    "615.0",
+    "-"
+  ],
+  [
+    "74.0",
+    "Crime and Punishment",
+    "Fyodor Dostoevsky",
+    "501.0",
+    "-"
+  ],
+  [
+    "75.0",
+    "The Indian Struggle",
+    "Subhas Chandra Bose",
+    "415.0"
+  ],
+  [
+    "76.0",
+    "Hindus In Hindu Rashtra",
+    "Anand Ranganathan",
+    "135.0",
+    "-"
+  ],
+  [
+    "77.0",
+    "Read People Like A Book",
+    "Patrick King",
+    "167.0",
+    "-"
+  ],
+  [
+    "78.0",
+    "Alexander Alekhine - Master Of Attack",
+    "Alexander Raetsky",
+    "175.0",
+    "-"
+  ],
+  [
+    "79.0",
+    "Hindutva ",
+    "Vinayak Damodar Savarkar",
+    "141.0",
+    "-"
+  ],
+  [
+    "80.0",
+    "The Unconscious",
+    "Sigmund Freud",
+    "106.0",
+    "-"
+  ],
+  [
+    "81.0",
+    "Deep Work",
+    "Cal Newport ",
+    "296.0",
+    "-"
+  ],
+  [
+    "82.0",
+    "The Denial of Death",
+    "Ernest Becker",
+    "316.0",
+    "-"
+  ],
+  [
+    "83.0",
+    "Utilitarianism",
+    "John Stuart Mill",
+    "64.0",
+    "-"
+  ],
+  [
+    "84.0",
+    "Getting Things Done",
+    "David Allen",
+    "286.0",
+    "-"
+  ],
+  [
+    "85.0",
+    "Eat That Frog",
+    "Brian Tracy",
+    "118.0",
+    "-"
+  ],
+  [
+    "86.0",
+    "War and Peace ",
+    "Leo Tolstoy",
+    "1232.0",
+    "-"
+  ],
+  [
+    "87.0",
+    "Why I Killed Gandhi",
+    "Nathuram Godse",
+    "165.0",
+    "-"
+  ],
+  [
+    "88.0",
+    "Julius Caesar",
+    "William Shakespeare",
+    "111.0",
+    "-"
+  ],
+  [
+    "89.0",
+    "The 48 Laws of Power",
+    "Robert Greene",
+    "452.0",
+    "Naman Baid"
+  ],
+  [
+    "90.0",
+    "Mastery",
+    "Robert Greene",
+    "336.0",
+    "-"
+  ],
+  [
+    "91.0",
+    "Gita Makaranda",
+    "802.0",
+    "-"
+  ],
+  [
+    "92.0",
+    "Intermediate Microeconomics",
+    "Hal Varian",
+    "-"
+  ],
+  [
+    "93.0",
+    "Factfulness",
+    "Hans Rosling"
+  ],
+  [
+    "94.0",
+    "Woke, Inc",
+    "Vivek Ramaswamy",
+    "-"
+  ],
+  [
+    "95.0",
+    "303 Tactical Chess Puzzles",
+    "-"
+  ],
+  [
+    "96.0",
+    "Principles Of Statutory Interpretation",
+    "Justice G.P. Singh",
+    "-"
+  ],
+  [
+    "97.0",
+    "Financial Statement Analysis ",
+    "Subramanyam",
+    "-"
+  ],
+  [
+    "98.0",
+    "Investments ",
+    "Bodie, Kane, Marcus, Mohanty",
+    "-"
+  ],
+  [
+    "99.0",
+    "The Economics of Money, Banking, and Financial Markets ",
+    "Frederic S. Mishkin",
+    "-"
+  ],
+  [
+    "100.0",
+    "Principles of Corporate Finance (14th Edition)",
+    "Brealey, Myers, Allen, Edmans, Mohanty",
+    "-"
+  ],
+  [
+    "101.0",
+    "The General Theory of Employment, Interest and Money",
+    "John Maynard Keynes",
+    "-"
+  ],
+  [
+    "102.0",
+    "All of Statistics",
+    "Larry Wesserman",
+    "-"
+  ],
+  [
+    "103.0",
+    "Indian Constitutional Law ",
+    "M.P Jain"
+  ],
+  [
+    "104.0",
+    "Mans Search for Meaning",
+    "Victor Frankl",
+    "154.0",
+    "-"
+  ],
+  [
+    "105.0",
+    "Nehru The Invention of India",
+    "Shashi Tharoor",
+    "-"
+  ],
+  [
+    "106.0",
+    "Boost Your Chess 1 - The Fundamentals",
+    "Artur Yusopov",
+    "-"
+  ],
+  [
+    "107.0",
+    "Build Up Your Chess 1 - The Fundamentals",
+    "Artur Yusopov",
+    "-"
+  ],
+  [
+    "108.0",
+    "The Law of Torts",
+    "Ratanlal and Dhirajlal",
+    "-"
+  ],
+  [
+    "109.0",
+    "Contract and Specific Relief",
+    "Avatar Singh",
+    "-"
+  ],
+  [
+    "110.0",
+    "Naked Economics",
+    "Charles Wheelan",
+    "357.0"
+  ],
+  [
+    "111.0",
+    " Mahabharata: The Kuru Princes (Book 1)",
+    "Amar Chitra Katha",
+    "440.0"
+  ],
+  [
+    "112.0",
+    "Mahabharata: Pandavas In Exile (Book 2)",
+    "Amar Chitra Katha",
+    "440.0"
+  ],
+  [
+    "113.0",
+    "Mahabharata: On the Battlefield of Kurukshetra (Book 3)",
+    "Amar Chitra Katha",
+    "427.0"
+  ],
+  [
+    "114.0",
+    "Ramayana: Bala Kand (Book 1)",
+    "Amar Chitra Katha",
+    "133.0"
+  ],
+  [
+    "115.0",
+    "Ramayana: Ayodhya Kand (Book 2)",
+    "Amar Chitra Katha",
+    "198.0"
+  ],
+  [
+    "116.0",
+    "Ramayana: Aranya Kand (Book 3)",
+    "Amar Chitra Katha",
+    "132.0"
+  ],
+  [
+    "117.0",
+    "Ramayana: Kishkindha Kand (Book 4)",
+    "Amar Chitra Katha",
+    "132.0"
+  ],
+  [
+    "118.0",
+    "Ramayana: Sundara Kand (Book 5)",
+    "Amar Chitra Katha",
+    "133.0"
+  ],
+  [
+    "119.0",
+    "Ramayana: Yuddha Kand (Book 6)",
+    "Amar Chitra Katha",
+    "206.0"
+  ],
+  [
+    "120.0",
+    "Immune",
+    "Philipp Dettmer",
+    "341.0"
+  ],
+  [
+    "121.0",
+    "AP US History",
+    "The Princeton Review",
+    "560.0"
+  ],
+  [
+    "122.0",
+    "PSAT/NMSQT",
+    "The Princeton Review",
+    "419.0"
+  ],
+  [
+    "123.0",
+    "AP English Language & Composition",
+    "The Princeton Review",
+    "365.0"
+  ],
+  [
+    "124.0",
+    "Digital SAT",
+    "The Princeton Review",
+    "715.0"
+  ],
+  [
+    "125.0",
+    "AP US Government & Politics",
+    "The Princeton Review",
+    "323.0"
+  ],
+  [
+    "126.0",
+    "AP Computer Science A",
+    "The Princeton Review",
+    "447.0"
+  ],
+  [
+    "127.0",
+    "AP Physics C",
+    "The Princeton Review",
+    "658.0"
+  ],
+  [
+    "128.0",
+    "AP Calculus BC",
+    "The Princeton Review",
+    "743.0"
+  ],
+  [
+    "129.0",
+    "AP Statistics",
+    "The Princeton Review",
+    "452.0"
+  ],
+  [
+    "130.0",
+    "AP Psychology",
+    "The Princeton Review",
+    "458.0"
+  ],
+  [
+    "131.0",
+    "AP World History ",
+    "The Princeton Review",
+    "482.0"
+  ],
+  [
+    "132.0",
+    "AP European History",
+    "The Princeton Review",
+    "458.0"
+  ],
+  [
+    "133.0",
+    "AP Microeconomics and Macroeconomics",
+    "The Princeton Review",
+    "Mukund Jagannath"
+  ],
+  [
+    "134.0",
+    "AP Comparative Government",
+    "Accepted Inc",
+    "Manya Nayak"
+  ],
+  [
+    "135.0",
+    "Surrounded By Idiots",
+    "Thomas Erikson",
+    "282.0"
+  ],
+  [
+    "136.0",
+    "Dopamine Detox",
+    "Thibaut Meurisse",
+    "67.0"
+  ],
+  [
+    "137.0",
+    "The Ultimate LNAT Guide",
+    "William Antony & Dr Rohan Agarwal",
+    "Manya Nayak"
+  ],
+  [
+    "138.0",
+    "The Ultimate TSA Guide",
+    "Dr Rohan Agarwal & Johnathan Madigan",
+    "203.0"
+  ],
+  [
+    "139.0",
+    "Nicomachean Ethics",
+    "Aristotle"
+  ],
+  [
+    "140.0",
+    "The Social Contract ",
+    "Jean-Jacques Rousseau"
+  ],
+  [
+    "141.0",
+    "Discourse on the Origin of Inequality Amongst Men",
+    "Jean-Jacques Rousseau"
+  ],
+  [
+    "142.0",
+    "Linear Algebra Done Right",
+    "Sheldon Axler",
+    "340.0"
+  ],
+  [
+    "143.0",
+    "Macroeconomics",
+    "Olivier Blanchard"
+  ],
+  [
+    "144.0",
+    "Introductory Econometrics",
+    "Jeffrey M. Woolridge"
+  ],
+  [
+    "145.0",
+    "Capital in the Twenty-First Century",
+    "Thomas Piketty"
+  ],
+  [
+    "146.0",
+    "Tao Te Ching",
+    "Lao Tzu"
+  ],
+  [
+    "147.0",
+    "Meditations",
+    "Marcus Aurelius",
+    "228.0"
+  ],
+  [
+    "148.0",
+    "Thinking, Fast and Slow",
+    "Daniel Kahneman"
+  ],
+  [
+    "149.0",
+    "Sapiens",
+    "Yuval Noah Harari"
+  ],
+  [
+    "150.0",
+    "The Palace of Illusions",
+    "Chitra Banerjee Divakaruni",
+    "360.0"
+  ],
+  [
+    "151.0",
+    "The Now Habit",
+    "Neil Fiore",
+    "206.0"
+  ],
+  [
+    "152.0",
+    "Four Thousand Weeks",
+    "Oliver Burkeman",
+    "271.0"
+  ],
+  [
+    "153.0",
+    "Calculus Early Transcendentals",
+    "James Stewart, Daniel Clegg, Saleem Watson",
+    "1210.0"
+  ],
+  [
+    "154.0",
+    "CFA 2026 Box Set (Level 1, Vol 1-10)",
+    "CFA Foundations"
+  ],
+  [
+    "155.0",
+    "How to Prove it",
+    "Velleman"
+  ],
+  [
+    "156.0"
+  ],
+  [
+    "157.0"
+  ],
+  [
+    "158.0"
+  ],
+  [
+    "159.0"
+  ],
+  [
+    "160.0"
+  ],
+  [
+    "161.0"
+  ],
+  [
+    "162.0"
+  ],
+  [
+    "163.0"
+  ],
+  [
+    "164.0"
+  ],
+  [
+    "165.0"
+  ],
+  [
+    "166.0"
+  ],
+  [
+    "167.0"
+  ],
+  [
+    "168.0"
+  ],
+  [
+    "169.0"
+  ],
+  [
+    "170.0"
+  ],
+  [
+    "171.0"
+  ],
+  [
+    "172.0"
+  ],
+  [
+    "173.0"
+  ],
+  [
+    "174.0"
+  ],
+  [
+    "175.0"
+  ],
+  [
+    "176.0"
+  ],
+  [
+    "177.0"
+  ],
+  [
+    "178.0"
+  ],
+  [
+    "179.0"
+  ],
+  [
+    "180.0"
+  ],
+  [
+    "181.0"
+  ],
+  [
+    "182.0"
+  ],
+  [
+    "183.0"
+  ]
+]
