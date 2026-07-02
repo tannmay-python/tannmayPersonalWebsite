@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Search, Mail, BookOpen } from 'lucide-react';
 import data from '../data.json';
 
 const Library = () => {
@@ -11,54 +13,81 @@ const Library = () => {
   );
 
   return (
-    <div className="page-transition">
+    <motion.div 
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }} 
+      exit={{ opacity: 0 }}
+      className="page-transition"
+    >
       <section className="section">
         <div className="container">
-          <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Library Index</h1>
-          <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', maxWidth: '700px' }}>
-            An archive of books spanning my areas of interest. If you reside nearby and wish to borrow a title from this repository, you may contact me at <a href="mailto:tannmay1303@gmail.com" style={{ textDecoration: 'underline' }}>tannmay1303@gmail.com</a>.
-          </p>
+          <header className="page-header">
+            <h1 className="page-title">The Library</h1>
+            <p className="page-subtitle">
+              A curated index of literature shaping my perspective across economics, history, and philosophy. 
+            </p>
+          </header>
 
-          <input 
-            type="text" 
-            placeholder="Search by title or author..." 
-            className="search-input"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
+          <div className="search-container">
+            <Search className="search-icon" size={20} />
+            <input 
+              type="text" 
+              placeholder="Search by title or author..." 
+              className="search-input"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </div>
 
-          <div className="library-table-container">
-            <table className="library-table">
-              <thead>
-                <tr>
-                  <th>Title</th>
-                  <th>Author</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filteredBooks.map((book, idx) => (
-                  <tr key={idx}>
-                    <td style={{ fontWeight: 500 }}>{book.title}</td>
-                    <td style={{ color: 'var(--text-muted)' }}>{book.author}</td>
-                  </tr>
-                ))}
-                {filteredBooks.length === 0 && (
-                  <tr>
-                    <td colSpan="2" style={{ textAlign: 'center', padding: '2rem', color: 'var(--text-muted)' }}>
-                      No matching titles found.
-                    </td>
-                  </tr>
-                )}
-              </tbody>
-            </table>
+          <div className="library-stats">
+            <span>{filteredBooks.length} titles found</span>
+          </div>
+
+          <div className="books-grid">
+            {filteredBooks.map((book, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: (idx % 15) * 0.03 }}
+                className="book-card"
+              >
+                <div className="book-card-inner">
+                  <div className="book-icon-wrapper">
+                    <BookOpen size={16} />
+                  </div>
+                  <div className="book-details">
+                    <h4 className="book-title">{book.title}</h4>
+                    <p className="book-author">{book.author}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+            
+            {filteredBooks.length === 0 && (
+              <div className="no-results">
+                <p>No titles match your search criteria.</p>
+              </div>
+            )}
           </div>
           
-          <p style={{ marginTop: '1rem', fontSize: '0.85rem', color: 'var(--text-light)', textAlign: 'right' }}>
-            Showing {filteredBooks.length} of {books.length} records.
-          </p>
+          <motion.div 
+            className="library-cta"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="library-cta-content">
+              <h3>Borrow a Title</h3>
+              <p>Located in Bengaluru? Reach out to borrow a book from the physical archives.</p>
+            </div>
+            <a href={`mailto:${data.profile.links.email}`} className="btn-primary">
+              <Mail size={18} /> Request Book
+            </a>
+          </motion.div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 
