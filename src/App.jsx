@@ -1,38 +1,34 @@
-import React from 'react';
-import { HashRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Work from './pages/Work';
-import Library from './pages/Library';
-import './index.css';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+import Nav from './components/Nav.jsx'
+import Footer from './components/Footer.jsx'
+import Home from './pages/Home.jsx'
+import Writing from './pages/Writing.jsx'
+import Library from './pages/Library.jsx'
 
-// To scroll to top on route change
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return null;
-};
-
-function App() {
-  return (
-    <Router>
-      <ScrollToTop />
-      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        <Navbar />
-        <main style={{ flex: 1, paddingTop: '80px' }}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/library" element={<Library />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
-  );
+function ScrollManager() {
+  const { pathname, state } = useLocation()
+  useEffect(() => {
+    if (state?.scrollTo) {
+      const el = document.getElementById(state.scrollTo)
+      if (el) { el.scrollIntoView({ behavior: 'smooth' }); return }
+    }
+    window.scrollTo(0, 0)
+  }, [pathname, state])
+  return null
 }
 
-export default App;
+export default function App() {
+  return (
+    <HashRouter>
+      <ScrollManager />
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/writing" element={<Writing />} />
+        <Route path="/library" element={<Library />} />
+      </Routes>
+      <Footer />
+    </HashRouter>
+  )
+}

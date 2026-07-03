@@ -1,94 +1,148 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Search, Mail, BookOpen } from 'lucide-react';
-import data from '../data.json';
+import { useState, useMemo } from 'react'
+import data from '../data.json'
 
-const Library = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  
-  const books = data.library;
-  const filteredBooks = books.filter(book => 
-    book.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
-    book.author.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+const email = data.profile.links.email
+
+// Warm, library-toned palette. Every book by the same author gets the same
+// spine colour, so collections (all the Nietzsche, all the Shakespeare) surface
+// as clusters of colour on the shelf.
+const PALETTE = [
+  '#620d3c', '#7a2348', '#8a3b64', '#43304f', '#5a3a2a', '#7a4a1f',
+  '#a06a12', '#3d4a2f', '#2f4a45', '#6e2b2b', '#4a2c40', '#8c5a12',
+]
+const colorFor = (author) => {
+  let h = 0
+  const key = (author || 'unknown').toLowerCase()
+  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) >>> 0
+  return PALETTE[h % PALETTE.length]
+}
+// darken a #rrggbb by a factor, for the spine's shaded inner edge
+const darken = (hex, f = 0.7) => {
+  const n = parseInt(hex.slice(1), 16)
+  const r = Math.round(((n >> 16) & 255) * f)
+  const g = Math.round(((n >> 8) & 255) * f)
+  const b = Math.round((n & 255) * f)
+  return `rgb(${r}, ${g}, ${b})`
+}
+
+// Spine thickness follows page count — thin pamphlets, fat treatises.
+const widthFor = (pages) => {
+  if (!pages) return 22
+  return Math.max(15, Math.min(46, Math.round(pages * 0.05 + 8)))
+}
+
+const clean = (s) => (s || '').trim()
+
+export default function Library() {
+  const [query, setQuery] = useState('')
+  const [sort, setSort] = useState('author')
+  const [selected, setSelected] = useState(null)
+
+  const books = useMemo(() => {
+    const list = data.library.map((b, i) => ({
+      ...b,
+      title: clean(b.title),
+      author: clean(b.author),
+      id: i,
+      color: colorFor(clean(b.author)),
+      w: widthFor(b.pages),
+    }))
+    const by = {
+      author: (a, b) => a.author.localeCompare(b.author) || a.title.localeCompare(b.title),
+      title: (a, b) => a.title.localeCompare(b.title),
+      thickness: (a, b) => (b.pages || 0) - (a.pages || 0),
+    }
+    return list.sort(by[sort])
+  }, [sort])
+
+  const q = query.trim().toLowerCase()
+  const matches = q
+    ? books.filter((b) => b.title.toLowerCase().includes(q) || b.author.toLowerCase().includes(q)).length
+    : books.length
+
+  const authorCount = new Set(books.map((b) => b.author).filter(Boolean)).size
 
   return (
-    <motion.div 
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: 1 }} 
-      exit={{ opacity: 0 }}
-      className="page-transition"
-    >
-      <section className="section">
-        <div className="container">
-          <header className="page-header">
-            <h1 className="page-title">The Library</h1>
-            <p className="page-subtitle">
-              A curated index of literature shaping my perspective across economics, history, and philosophy. 
-            </p>
-          </header>
+    <>
+      <div className="page-head">
+        <h1>The Library</h1>
+        <p>
+          {books.length} books I own and have read — philosophy and history, policy
+          and finance, a good deal of Shakespeare and Nietzsche. Each spine is coloured
+          by author and sized by page count, so the collections show themselves.
+        </p>
+      </div>
 
-          <div className="search-container">
-            <Search className="search-icon" size={20} />
-            <input 
-              type="text" 
-              placeholder="Search by title or author..." 
-              className="search-input"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+      <section className="section" style={{ paddingTop: '1.5rem' }}>
+        <div className="lib-controls">
+          <div className="lib-search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" />
+            </svg>
+            <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search by title or author…"
+              aria-label="Search the library"
             />
           </div>
-
-          <div className="library-stats">
-            <span>{filteredBooks.length} titles found</span>
-          </div>
-
-          <div className="books-grid">
-            {filteredBooks.map((book, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: (idx % 15) * 0.03 }}
-                className="book-card"
-              >
-                <div className="book-card-inner">
-                  <div className="book-icon-wrapper">
-                    <BookOpen size={16} />
-                  </div>
-                  <div className="book-details">
-                    <h4 className="book-title">{book.title}</h4>
-                    <p className="book-author">{book.author}</p>
-                  </div>
-                </div>
-              </motion.div>
+          <div className="lib-sort">
+            {[['author', 'By author'], ['title', 'A–Z'], ['thickness', 'By length']].map(([k, label]) => (
+              <button key={k} className={sort === k ? 'active' : ''} onClick={() => setSort(k)}>
+                {label}
+              </button>
             ))}
-            
-            {filteredBooks.length === 0 && (
-              <div className="no-results">
-                <p>No titles match your search criteria.</p>
-              </div>
-            )}
           </div>
-          
-          <motion.div 
-            className="library-cta"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className="library-cta-content">
-              <h3>Borrow a Title</h3>
-              <p>Located in Bengaluru? Reach out to borrow a book from the physical archives.</p>
+        </div>
+
+        <div className="lib-count">
+          {q ? <>{matches} of {books.length} books</> : <>{books.length} books · {authorCount} authors</>}
+        </div>
+
+        <div className="shelf" onMouseLeave={() => {}}>
+          {books.map((b) => {
+            const dim = q && !(b.title.toLowerCase().includes(q) || b.author.toLowerCase().includes(q))
+            return (
+              <div
+                key={b.id}
+                className={`spine ${dim ? 'dim' : ''} ${selected?.id === b.id ? 'selected' : ''}`}
+                style={{ width: `${b.w}px`, background: `linear-gradient(90deg, ${b.color} 55%, ${darken(b.color, 0.72)})` }}
+                title={`${b.title} — ${b.author || 'Unknown'}`}
+                onClick={() => setSelected(selected?.id === b.id ? null : b)}
+              >
+                <span className="spine-label">{b.title}</span>
+              </div>
+            )
+          })}
+        </div>
+
+        {selected && (
+          <div className="book-detail">
+            <div>
+              <div className="bd-title">{selected.title}</div>
+              <div className="bd-meta">
+                {selected.author || 'Unknown author'}
+                {selected.pages ? ` · ${selected.pages} pages` : ''}
+              </div>
             </div>
-            <a href={`mailto:${data.profile.links.email}`} className="btn-primary">
-              <Mail size={18} /> Request Book
-            </a>
-          </motion.div>
+            <button className="bd-close" onClick={() => setSelected(null)} aria-label="Close">×</button>
+          </div>
+        )}
+
+        <p className="lib-legend">
+          <b>Colour</b> groups books by author · <b>width</b> tracks page count · click a spine for details.
+        </p>
+
+        <div className="borrow">
+          <p>
+            See something you'd like to read? <b>Email me.</b> Most of these are
+            yours to borrow — I'd rather they be read than shelved.
+          </p>
+          <a href={`mailto:${email}?subject=Borrowing a book`} className="btn btn-primary">
+            Ask to borrow →
+          </a>
         </div>
       </section>
-    </motion.div>
-  );
-};
-
-export default Library;
+    </>
+  )
+}

@@ -1,115 +1,143 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowRight, Trophy, Book, Activity, Compass, Telescope } from 'lucide-react';
-import data from '../data.json';
+import { Link } from 'react-router-dom'
+import data from '../data.json'
+import Constellation from '../components/Constellation.jsx'
 
-const Home = () => {
+const host = (url) => {
+  try { return new URL(url).hostname.replace('www.', '') } catch { return url }
+}
+const fmt = (d) => {
+  if (!d) return ''
+  const dt = new Date(d)
+  return dt.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' })
+}
+
+// newest four pieces across all categories, for the home preview
+const selected = Object.entries(data.work)
+  .flatMap(([type, items]) => items.map((i) => ({ ...i, type })))
+  .filter((i) => i.date)
+  .sort((a, b) => b.date.localeCompare(a.date))
+  .slice(0, 4)
+
+const total = Object.values(data.work).reduce((n, arr) => n + arr.length, 0)
+
+export default function Home() {
+  const { links } = data.profile
   return (
-    <motion.div 
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: 1 }} 
-      exit={{ opacity: 0 }}
-      className="page-transition"
-    >
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="container hero-container">
-          <motion.div 
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            className="hero-content"
-          >
-            <h1 className="hero-title">Tannmay K. Baid</h1>
-            <p className="hero-description">
-              Student at National Public School, HSR, and Adjunct Junior Scholar at the Takshashila Institution. Exploring the intersection of technology geopolitics, law, and economics.
-            </p>
-            <div className="hero-links">
-              <Link to="/work" className="btn-primary">
-                Explore Research <ArrowRight size={18} />
-              </Link>
+    <main>
+      {/* ---- Hero ---- */}
+      <header className="hero">
+        <Constellation />
+        <div className="hero-inner">
+          <p className="eyebrow">Takshashila Institution · Bengaluru</p>
+          <h1>
+            Tannmay Kumarr <span className="amp">Baid</span>
+          </h1>
+          <p className="hero-lede">
+            I'm in twelfth grade at National Public School, HSR, and I write on
+            technology and geopolitics at the <b>Takshashila Institution</b> —
+            mostly India's rare-earth and critical-minerals strategy. Off the page:
+            a telescope, a debate habit, and a library I'm running out of shelf space for.
+          </p>
+          <div className="hero-meta">
+            <span>Adjunct Junior Scholar</span>
+            <span>Op-eds &amp; policy research</span>
+            <span>GCPP Technology &amp; Policy, Cohort 43</span>
+          </div>
+          <div className="hero-cta">
+            <Link to="/writing" className="btn btn-primary">Read the writing →</Link>
+            <a href={`mailto:${links.email}`} className="btn btn-ghost">Get in touch</a>
+          </div>
+        </div>
+      </header>
+
+      {/* ---- Projects ---- */}
+      <section className="section" id="projects">
+        <div className="section-head">
+          <h2>Projects</h2>
+          <span className="count">Things I've built</span>
+        </div>
+        <div className="projects-grid">
+          {data.projects.map((p) => (
+            <a key={p.title} href={p.url} target="_blank" rel="noreferrer" className="project-card">
+              <span className="project-tag">{p.tag}</span>
+              <h3>{p.title}</h3>
+              <p>{p.blurb}</p>
+              <span className="visit">
+                Visit <span className="host">{host(p.url)}</span> ↗
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      {/* ---- Selected writing ---- */}
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="section-head">
+          <h2>Selected writing</h2>
+          <Link to="/writing" className="link-arrow">All {total} pieces →</Link>
+        </div>
+        <div className="writing-list">
+          {selected.map((w) => (
+            <a key={w.url} href={w.url} target="_blank" rel="noreferrer" className="wrow">
+              <div className="wrow-main">
+                <span className="wrow-title">{w.title}</span>
+                <span className="wrow-meta">
+                  <span className="wrow-type">{w.type}</span>
+                  {w.outlet} · {fmt(w.date)}
+                </span>
+              </div>
+              <span className="wrow-arrow">↗</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      {/* ---- Beyond ---- */}
+      <section className="section" id="beyond" style={{ paddingTop: 0 }}>
+        <div className="section-head">
+          <h2>Beyond the desk</h2>
+        </div>
+        <div className="beyond-grid">
+          <article className="beyond-card beyond-feature">
+            <span className="b-label">Debate</span>
+            <h3>Arguing for a living, almost</h3>
+            <p>Years on the national circuit with the Indian Schools Debating Society, and a habit of taking the harder side.</p>
+            <div className="medals">
+              <span className="medal"><b>Top&nbsp;18</b> India, WSDC national selection (2025)</span>
+              <span className="medal"><b>Top&nbsp;40</b> India, WSDC national selection (2023)</span>
+              <span className="medal"><b>Gold</b> Senior Novice, LSE Open</span>
             </div>
-          </motion.div>
+          </article>
+          <article className="beyond-card">
+            <span className="b-label">Astronomy</span>
+            <h3>Nights out with an 8″ Dob</h3>
+            <p>A Dobsonian telescope and a soft spot for planets on a clear night.</p>
+          </article>
+          <article className="beyond-card">
+            <span className="b-label">Reading</span>
+            <h3>A shelf worth borrowing</h3>
+            <p><Link to="/library" className="link-arrow">Browse the library →</Link></p>
+          </article>
+          <article className="beyond-card">
+            <span className="b-label">Also</span>
+            <h3>Math &amp; the gym</h3>
+            <p>Proofs and progressive overload — both are just reps.</p>
+          </article>
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section className="section bg-secondary">
-        <div className="container">
-          <div className="section-header-row">
-            <h2 className="section-heading">Projects</h2>
-          </div>
-          
-          <div className="projects-grid">
-            {data.projects.map((project, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="project-card group"
-              >
-                <div className="project-card-content">
-                  <h3 className="project-title">{project.title}</h3>
-                  <a href={project.url} target="_blank" rel="noreferrer" className="project-link">
-                    View Project <ArrowRight size={16} className="project-link-icon" />
-                  </a>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+      {/* ---- Contact ---- */}
+      <section className="section contact" id="contact" style={{ paddingTop: 0 }}>
+        <div className="section-head" style={{ justifyContent: 'center', border: 'none', marginBottom: '1rem' }}>
+          <h2>Say hello</h2>
+        </div>
+        <p>For writing, projects, a book off the shelf, or anything in between.</p>
+        <a href={`mailto:${links.email}`} className="contact-mail">{links.email}</a>
+        <div className="socials">
+          <a href={links.twitter} target="_blank" rel="noreferrer">Twitter ↗</a>
+          <a href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
         </div>
       </section>
-
-      {/* Engagements Section */}
-      <section className="section">
-        <div className="container">
-          <h2 className="section-heading mb-large">Engagements & Pursuits</h2>
-          
-          <div className="engagements-layout">
-            <motion.div 
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="highlight-card"
-            >
-              <div className="highlight-icon"><Trophy size={28} /></div>
-              <h3 className="highlight-title">Competitive Debating</h3>
-              <p className="highlight-desc">
-                Ranked among the Top-40 debaters in India (ISDS 2023) and Top-18 (2025 WSDC selection). Secured the Senior Novice Gold Medal representing India at the LSE Open.
-              </p>
-            </motion.div>
-
-            <motion.div 
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="pursuits-grid"
-            >
-              <div className="pursuit-item">
-                <Telescope className="pursuit-icon" size={20} />
-                <span>Astronomy (8-inch Dobsonian)</span>
-              </div>
-              <div className="pursuit-item">
-                <Book className="pursuit-icon" size={20} />
-                <span>Literature & Philosophy</span>
-              </div>
-              <div className="pursuit-item">
-                <Compass className="pursuit-icon" size={20} />
-                <span>Mathematics</span>
-              </div>
-              <div className="pursuit-item">
-                <Activity className="pursuit-icon" size={20} />
-                <span>Fitness</span>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-    </motion.div>
-  );
-};
-
-export default Home;
+    </main>
+  )
+}
