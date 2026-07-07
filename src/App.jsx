@@ -9,6 +9,11 @@ import Library from './pages/Library.jsx'
 function ScrollManager() {
   const { pathname, state } = useLocation()
   useEffect(() => {
+    const titles = {
+      '/writing': 'Writing — Tannmay Kumarr Baid',
+      '/library': 'Library — Tannmay Kumarr Baid',
+    }
+    document.title = titles[pathname] || 'Tannmay Kumarr Baid'
     if (state?.scrollTo) {
       const el = document.getElementById(state.scrollTo)
       if (el) { el.scrollIntoView({ behavior: 'smooth' }); return }
