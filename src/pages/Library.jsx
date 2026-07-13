@@ -64,19 +64,21 @@ export default function Library() {
 
   return (
     <>
-      <div className="page-head">
+      <header className="masthead compact">
+        <div className="masthead-inner">
         <h1>Library</h1>
-        <p>
+        <p className="masthead-lede">
           A working library — philosophy and history, statecraft and finance, a run of
-          Shakespeare, rather a lot of Nietzsche. Catalogued in full below, filed by
-          author, and open for lending.
+          Shakespeare, rather a lot of Nietzsche. Catalogued in full below, <b>filed by
+          author, and open for lending</b>.
         </p>
         <div className="cat-stats">
           <span><b>{books.length}</b> volumes</span>
           <span><b>{authorCount}</b> authors</span>
           <span><b>{totalPages.toLocaleString('en-IN')}</b> pages, give or take</span>
         </div>
-      </div>
+        </div>
+      </header>
 
       <section className="section" style={{ paddingTop: '1.2rem' }}>
         <div className="cat-bar">

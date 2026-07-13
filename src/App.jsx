@@ -1,4 +1,5 @@
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { MotionConfig } from 'framer-motion'
 import { useEffect } from 'react'
 import Nav from './components/Nav.jsx'
 import Footer from './components/Footer.jsx'
@@ -25,15 +26,17 @@ function ScrollManager() {
 
 export default function App() {
   return (
-    <HashRouter>
-      <ScrollManager />
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/writing" element={<Writing />} />
-        <Route path="/library" element={<Library />} />
-      </Routes>
-      <Footer />
-    </HashRouter>
+    <MotionConfig reducedMotion="user">
+      <HashRouter>
+        <ScrollManager />
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/writing" element={<Writing />} />
+          <Route path="/library" element={<Library />} />
+        </Routes>
+        <Footer />
+      </HashRouter>
+    </MotionConfig>
   )
 }

@@ -42,11 +42,12 @@ export default function Writing() {
 
   return (
     <>
-      <div className="page-head">
+      <header className="masthead compact">
+        <div className="masthead-inner">
         <h1>Writing</h1>
-        <p>
-          Op-eds, podcasts, and policy research — most of it on rare earths, critical
-          minerals, and the geopolitics of technology. Published across national dailies
+        <p className="masthead-lede">
+          Op-eds, podcasts, and policy research — most of it on <b>rare earths, critical
+          minerals, and the geopolitics of technology</b>. Published across national dailies
           and the Takshashila Institution.
         </p>
         <div className="filters">
@@ -66,7 +67,8 @@ export default function Writing() {
             </button>
           ))}
         </div>
-      </div>
+        </div>
+      </header>
 
       <section className="section" style={{ paddingTop: '1.5rem' }}>
         <motion.div layout className="writing-list">

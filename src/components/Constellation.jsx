@@ -42,7 +42,7 @@ export default function Constellation() {
         if (s.y < 0 || s.y > h) s.vy *= -1
         ctx.beginPath()
         ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2)
-        ctx.fillStyle = 'rgba(98, 13, 60, 0.30)'
+        ctx.fillStyle = 'rgba(246, 236, 223, 0.55)'
         ctx.fill()
         const dx = s.x - mouse.x, dy = s.y - mouse.y
         const d = Math.hypot(dx, dy)
@@ -50,7 +50,7 @@ export default function Constellation() {
           ctx.beginPath()
           ctx.moveTo(s.x, s.y)
           ctx.lineTo(mouse.x, mouse.y)
-          ctx.strokeStyle = `rgba(241, 162, 34, ${0.28 * (1 - d / 130)})`
+          ctx.strokeStyle = `rgba(241, 162, 34, ${0.45 * (1 - d / 130)})`
           ctx.lineWidth = 0.7
           ctx.stroke()
         }
@@ -64,7 +64,7 @@ export default function Constellation() {
             ctx.beginPath()
             ctx.moveTo(stars[i].x, stars[i].y)
             ctx.lineTo(stars[j].x, stars[j].y)
-            ctx.strokeStyle = `rgba(98, 13, 60, ${0.10 * (1 - d / 96)})`
+            ctx.strokeStyle = `rgba(246, 236, 223, ${0.14 * (1 - d / 96)})`
             ctx.lineWidth = 0.5
             ctx.stroke()
           }
@@ -94,5 +94,5 @@ export default function Constellation() {
     }
   }, [])
 
-  return <canvas ref={ref} className="hero-canvas" aria-hidden="true" />
+  return <canvas ref={ref} className="masthead-canvas" aria-hidden="true" />
 }

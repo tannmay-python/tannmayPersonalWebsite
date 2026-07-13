@@ -1,16 +1,51 @@
-# React + Vite
+# tannmaybaid — personal site
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Live: https://tannmay-python.github.io/tannmayPersonalWebsite/
 
-Currently, two official plugins are available:
+Vite + React. All content lives in **one file: [`src/data.json`](src/data.json)**.
+Every push to `main` auto-builds and deploys via GitHub Actions (~2 min). No local
+setup needed — edit on github.com (pencil icon), commit, done.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Add a new op-ed / podcast / publication / blog / newsletter
 
-## React Compiler
+In `src/data.json`, find `work` → the right category array, and add an entry:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```json
+{
+  "title": "Exact headline of the piece",
+  "url": "https://…",
+  "date": "2026-07-20",
+  "outlet": "Hindustan Times"
+}
+```
 
-## Expanding the Oxlint configuration
+`date` is `YYYY-MM-DD` — it drives sorting and the year groups. `outlet` is the
+display name (e.g. "All Things Policy", "Technopolitik", "The Hindu").
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Add a project
+
+`projects` array — first entry is the big featured card, the rest are companions:
+
+```json
+{
+  "title": "Project name",
+  "url": "https://…",
+  "blurb": "One or two sentences on what it is and why it exists.",
+  "tag": "Data · Policy"
+}
+```
+
+## Add a book
+
+`library` array:
+
+```json
+{ "title": "Book Title", "author": "Author Name", "pages": 320 }
+```
+
+`pages` optional (`null` is fine). The catalogue files by author surname automatically.
+
+## Everything else
+
+Name, role, email, socials: `profile` at the top of `data.json`.
+Run locally: `npm install && npm run dev`. Manual deploy fallback: `npm run deploy`.
